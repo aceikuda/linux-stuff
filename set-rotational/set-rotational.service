@@ -1,0 +1,10 @@
+[Unit]
+Description=set the rotational value for a specific device
+After=local-fs.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/set_rotational.sh
+
+[Install]
+WantedBy=multi-user.target
